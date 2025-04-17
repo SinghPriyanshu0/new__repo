@@ -17,7 +17,7 @@ if email_input and phone_input:
 
 # -------------------- Search Records --------------------
 if email_input and phone_input:
-    RECORDS_API_URL = "http://localhost:8000/search"  # FastAPI endpoint for user records
+    RECORDS_API_URL = "https://sf-api-3.onrender.com/search"# FastAPI endpoint for user records
 
     def search_records_from_api(email: str, phone: str):
         payload = {"email": email, "phone": phone}
@@ -82,7 +82,7 @@ if email_input and phone_input:
 # -------------------- Search Orders (via API) --------------------
 if 'email' in st.session_state and 'phone' in st.session_state:
     email_input = st.session_state.email
-    ORDER_API_URL = "http://localhost:8000/search_order"  # FastAPI endpoint for orders
+    ORDER_API_URL = "https://sf-api-3.onrender.com/search_order" # FastAPI endpoint for orders
 
     def search_orders_from_api(email: str):
         try:
