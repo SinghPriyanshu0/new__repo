@@ -124,11 +124,9 @@ if 'email' in st.session_state and 'phone' in st.session_state:
                         st.info("No valid rows found in any table.")
 
 # -------------------- Footer --------------------
-st.markdown(
-    """
-    <style>
-    footer {visibility: hidden;}
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+st.markdown("""
+    <hr/>
+    <div style="text-align: center; font-size: 0.9rem; color: #666;">
+        ⛏️ Crafted with ❤️ using <b>Streamlit</b> | © 2025 Bytepx
+    </div>
+""", unsafe_allow_html=True)
